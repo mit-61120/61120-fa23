@@ -177,13 +177,7 @@ Whether your parser is inside `interpreter/` or `cmake-build-*/interpreter`, inv
 
 #### Running Tests
 
-To run the provided tests:
-
-```sh
-# phase is a1,a2,...
-# [path/to/program] is the location of your executable, parser or interpreter
-tests/[phase]/run-tests.sh [public|private] [path/to/program]
-```
+To run the provided tests, please see the `tests/[phase]/run-tests.sh` scripts. The top of each script contains instructions for running the tests.
 
 #### Unit tests
 
