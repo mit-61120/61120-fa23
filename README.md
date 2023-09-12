@@ -73,7 +73,7 @@ To pull updates from this repository, go to your own repository, and run:
 git remote add upstream git@github.com:mit-61120/61120-fa23.git
 
 # do this every time the skeleton repository is updated
-git pull upstream main
+git pull upstream master
 ```
 
 ## Build and Run
