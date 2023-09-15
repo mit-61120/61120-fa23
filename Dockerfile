@@ -16,4 +16,5 @@ RUN apt update && apt -y --no-install-recommends install \
     flex \
     bison \
     time \
-    valgrind
+    valgrind \
+    libantlr4-runtime-dev
