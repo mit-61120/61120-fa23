@@ -52,7 +52,7 @@ docker build . -t <image tag>
 If you're not using Docker, install the following dependencies on your local system:
 
 ```sh
-sudo apt install git build-essential default-jre
+sudo apt install git build-essential default-jre libantlr4-runtime-dev
 
 # for P3
 sudo apt install flex bison

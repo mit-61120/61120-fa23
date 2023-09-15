@@ -13,7 +13,7 @@ add_custom_command(
 # Grammar library
 add_library(MITScriptGrammar MITScript.cpp)
 target_link_libraries(MITScriptGrammar ${CMAKE_SYSROOT}/usr/lib/${CMAKE_LIBRARY_ARCHITECTURE}/libantlr4-runtime.a)
-target_include_directories(MITScriptGrammar PUBLIC include)
+target_include_directories(MITScriptGrammar PUBLIC /usr/include/antlr4-runtime)
 
 # Parser sources
 add_library(ParserSources OBJECT
