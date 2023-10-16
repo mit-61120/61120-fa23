@@ -1,0 +1,313 @@
+function
+{
+	functions =
+	[
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 1,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 0,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 1,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions =
+			[
+				function
+				{
+					functions = [],
+					constants = ["Index ", " out of bounds", None],
+					parameter_count = 2,
+					local_vars = [idx, val],
+					local_ref_vars = [],
+					free_vars = [size, this],
+					names = [print],
+					instructions = 
+					[
+						load_local	0
+						push_ref	0
+						load_ref
+						swap
+						gt
+						not
+						if	7
+						push_ref	1
+						load_ref
+						load_local	0
+						load_local	1
+						index_store
+						goto	9
+						load_global	0
+						load_const	0
+						load_local	0
+						add
+						load_const	1
+						add
+						call	1
+						pop
+						load_const	2
+						return
+					]
+				},
+				function
+				{
+					functions = [],
+					constants = ["Index ", " out of bounds", None],
+					parameter_count = 1,
+					local_vars = [idx],
+					local_ref_vars = [],
+					free_vars = [size, this],
+					names = [print],
+					instructions = 
+					[
+						load_local	0
+						push_ref	0
+						load_ref
+						swap
+						gt
+						not
+						if	7
+						push_ref	1
+						load_ref
+						load_local	0
+						index_load
+						return
+						goto	9
+						load_global	0
+						load_const	0
+						load_local	0
+						add
+						load_const	1
+						add
+						call	1
+						pop
+						load_const	2
+						return
+					]
+				},
+				function
+				{
+					functions = [],
+					constants = [0, "", " ", 1, "[", "]", None],
+					parameter_count = 0,
+					local_vars = [i, out],
+					local_ref_vars = [],
+					free_vars = [size, this],
+					names = [get, print],
+					instructions = 
+					[
+						load_const	0
+						store_local	0
+						load_const	1
+						store_local	1
+						load_local	0
+						push_ref	0
+						load_ref
+						swap
+						gt
+						not
+						if	16
+						load_local	1
+						push_ref	1
+						load_ref
+						field_load	0
+						load_local	0
+						call	1
+						add
+						load_const	2
+						add
+						store_local	1
+						load_local	0
+						load_const	3
+						add
+						store_local	0
+						goto	-21
+						load_global	1
+						load_const	4
+						load_local	1
+						add
+						load_const	5
+						add
+						call	1
+						pop
+						load_const	6
+						return
+					]
+				}
+			],
+			constants = [],
+			parameter_count = 1,
+			local_vars = [size, this],
+			local_ref_vars = [size, this],
+			free_vars = [],
+			names = [put, get, print],
+			instructions = 
+			[
+				alloc_record
+				dup
+				dup
+				dup
+				load_func	0
+				push_ref	0
+				push_ref	1
+				alloc_closure	2
+				field_store	0
+				load_func	1
+				push_ref	0
+				push_ref	1
+				alloc_closure	2
+				field_store	1
+				load_func	2
+				push_ref	0
+				push_ref	1
+				alloc_closure	2
+				field_store	2
+				store_local	1
+				load_local	1
+				return
+			]
+		}
+	],
+	constants = ["Before a1", 10, 0, 5, 2, 3, true, 4, "Before print array", "O", 1, "U", "H", "X", "Y"],
+	parameter_count = 0,
+	local_vars = [],
+	local_ref_vars = [],
+	free_vars = [],
+	names = [Array, a1, f, a2, print, put, get, input, intcast],
+	instructions = 
+	[
+		load_func	0
+		alloc_closure	0
+		store_global	4
+		load_func	1
+		alloc_closure	0
+		store_global	7
+		load_func	2
+		alloc_closure	0
+		store_global	8
+		load_func	3
+		alloc_closure	0
+		store_global	0
+		load_global	4
+		load_const	0
+		call	1
+		pop
+		load_global	0
+		load_const	1
+		call	1
+		store_global	1
+		load_global	1
+		field_load	5
+		load_const	2
+		load_const	3
+		call	2
+		pop
+		load_global	1
+		field_load	5
+		load_const	4
+		load_const	5
+		call	2
+		pop
+		load_global	1
+		field_load	5
+		load_const	2
+		load_const	4
+		call	2
+		pop
+		load_global	1
+		field_load	5
+		load_const	5
+		load_const	6
+		call	2
+		pop
+		load_global	1
+		field_load	5
+		load_const	7
+		load_global	0
+		call	2
+		pop
+		load_global	4
+		load_const	8
+		call	1
+		pop
+		load_global	1
+		field_load	4
+		call	0
+		pop
+		load_global	1
+		field_load	6
+		load_const	7
+		call	1
+		store_global	2
+		load_global	2
+		load_const	5
+		call	1
+		store_global	3
+		load_global	3
+		field_load	5
+		load_const	2
+		load_const	9
+		call	2
+		pop
+		load_global	3
+		field_load	5
+		load_const	10
+		load_const	11
+		call	2
+		pop
+		load_global	3
+		field_load	5
+		load_const	4
+		load_const	12
+		call	2
+		pop
+		load_global	3
+		field_load	5
+		load_const	5
+		load_const	13
+		call	2
+		pop
+		load_global	3
+		field_load	5
+		load_const	7
+		load_const	14
+		call	2
+		pop
+		load_global	3
+		field_load	4
+		call	0
+		pop
+	]
+}

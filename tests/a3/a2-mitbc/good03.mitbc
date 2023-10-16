@@ -1,0 +1,115 @@
+function
+{
+	functions =
+	[
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 1,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 0,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions = [],
+			constants = [],
+			parameter_count = 1,
+			local_vars = [],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [],
+			instructions = 
+			[
+			]
+		},
+		function
+		{
+			functions = [],
+			constants = ["Point(", ", ", ")", None],
+			parameter_count = 1,
+			local_vars = [pt],
+			local_ref_vars = [],
+			free_vars = [],
+			names = [print, name, x, y],
+			instructions = 
+			[
+				load_global	0
+				load_const	0
+				load_local	0
+				field_load	1
+				add
+				load_const	1
+				add
+				load_local	0
+				field_load	2
+				add
+				load_const	1
+				add
+				load_local	0
+				field_load	3
+				add
+				load_const	2
+				add
+				call	1
+				pop
+				load_const	3
+				return
+			]
+		}
+	],
+	constants = [12, 24, "point1"],
+	parameter_count = 0,
+	local_vars = [],
+	local_ref_vars = [],
+	free_vars = [],
+	names = [point, display, x, y, name, print, input, intcast],
+	instructions = 
+	[
+		load_func	0
+		alloc_closure	0
+		store_global	5
+		load_func	1
+		alloc_closure	0
+		store_global	6
+		load_func	2
+		alloc_closure	0
+		store_global	7
+		alloc_record
+		dup
+		dup
+		dup
+		load_const	0
+		field_store	2
+		load_const	1
+		field_store	3
+		load_const	2
+		field_store	4
+		store_global	0
+		load_func	3
+		alloc_closure	0
+		store_global	1
+		load_global	1
+		load_global	0
+		call	1
+		pop
+	]
+}
